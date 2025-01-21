@@ -134,7 +134,7 @@
   <div class="main-block">
     <h1><img src="images/NewLogoCBK.png" alt="CBK" width="208" height="171" longdesc="http://www.centralbankkenya.co.ke"></h1>
     <h1>Beneficiary Details Registration</h1>
-      <form action="/">
+      <form action="register.php" method="POST">
         <hr>
         <div class="account-type">
           <input type="radio" value="none" id="radioOne" name="account" checked/>
@@ -144,44 +144,25 @@
         </div>
         <hr>
         <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Full Names" required/>
+        <input type="text" name="full_name" id="full_name" placeholder="Full Names" required/>
         <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="National ID" required/>
+        <input type="text" name="national_id" id="national_id" placeholder="National ID" required/>
         <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Passport No. (Optional)" required/>
+        <input type="text" name="passport_no" id="passport_no" placeholder="Passport No. (Optional)"/>
 		 <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="KRA PIN No." required/>
-        <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        Beneficiary Bank
-		<select>
-              <option value="">Choose Bank</option>
-              <option value="1">Cooperative Bank</option>
-              <option value="2">Kenya Commercial Bank</option>
-              <option value="3">ABSA</option>
-              <option value="4">National Bank</option>
-              <option value="5">DTB</option>
-              <option value="6">Bank of Africa</option>
-              <option value="7">Equity Bank</option>
-              <option value="8">Family Bank</option>
-              <option value="9">Access Bank</option>
-              <option value="10">Paramount Bank</option>
-              <option value="11">Bank of India</option>
-              <option value="12">Ecobank</option>
-              <option value="13">Middle East Bank</option>
-              <option value="14">Mayfair Bank</option>
-              <option value="15">Housing Finance</option>
-            </select><br>
-        <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Beneficiary Bank Account" required/>
-		<hr>
+        <input type="text" name="kra_no" id="kra_no" placeholder="KRA PIN No." required/>
+            <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="bank_name" id="bank_name" placeholder="Beneficiary Bank Account" required/>
 		 <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Amount USD" required/>
+        <input type="text" name="account_no" id="account_no" placeholder="Account Number" required/>
+		 <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="amount_usd" id="amount_usd" placeholder="Amount USD" required/>
         <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Account Status" required/>
+        <input type="text" name="account_status" id="account_status" placeholder="Account Status" required/>
 		<label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Username" required/>
+        <input type="text" name="username" id="username" placeholder="Username" required/>
 		<label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-        <input type="password" name="name" id="name" placeholder="Password" required/>
+        <input type="password" name="password" id="password" placeholder="Password" required/>
         <hr>
         <div class="btn-block">
           <p>By clicking Register, you agree on our Privacy Policy for CBK</p>
